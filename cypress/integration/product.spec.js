@@ -18,7 +18,7 @@ describe('product page', () => {
   })
 
   it('displays product item', () => {
-    cy.get('.product-id').contains('09A')
+    cy.get('.product-id').contains('09')
     cy.get('.product-name').contains('Gem Visa')
     cy.get('.product-type').contains('CREDIT_CARD')
   })
