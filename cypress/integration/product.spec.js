@@ -8,7 +8,7 @@ describe('product page', () => {
         url: '**/product/*'
       },
       {
-        statusCode: 201,
+        statusCode: 200,
         body: { ...productResponse },
         headers: { 'access-control-allow-origin': '*' }
       }
@@ -18,7 +18,7 @@ describe('product page', () => {
   })
 
   it('displays product item', () => {
-    cy.get('.product-id').contains('09')
+    cy.get('.product-id').contains('09A')
     cy.get('.product-name').contains('Gem Visa')
     cy.get('.product-type').contains('CREDIT_CARD')
   })
