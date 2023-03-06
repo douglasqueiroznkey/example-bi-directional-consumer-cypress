@@ -8,7 +8,7 @@ describe('product page', () => {
         url: '**/product/*'
       },
       {
-        statusCode: 200,
+        statusCode: 201,
         body: { ...productResponse },
         headers: { 'access-control-allow-origin': '*' }
       }
